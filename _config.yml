@@ -78,7 +78,7 @@ theme_mode: dark  # [light|dark]
 # will be added to all image (site avatar & posts' images) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-img_cdn: 'https://cdn.jsdelivr.net/gh/ddtdt113/ddtdt113.github.io@gh-pages/'
+img_cdn: https://cdn.jsdelivr.net/gh/ddtdt113/ddtdt113.github.io@gh-pages
 
 # the avatar on sidebar, support local or CORS resources
 avatar: '/assets/img/profile.png'
