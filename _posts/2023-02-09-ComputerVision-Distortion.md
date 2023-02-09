@@ -24,9 +24,8 @@ last_modified_at : 2023.02.09
 
 ## ***Radial Distortion은 무엇인가?***
 ---
-![radial_distrotion][rd_image]
+![radial_distortion](https://user-images.githubusercontent.com/41114834/217746235-23dca812-3047-4ff7-a2ae-eacc0e09a856.png))
 
-[rd_image]: /assets/img/posting_img/radial_distortion.png "[Imag] Radial Distortion" 
 
 
 
