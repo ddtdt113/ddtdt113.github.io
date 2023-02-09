@@ -1,6 +1,6 @@
 ---
 title: "[ComputerVision] Single Camera Calibration Process"
-excerpt: ""
+excerpt: "blank"
 
 categories:
     - ComputeVision
