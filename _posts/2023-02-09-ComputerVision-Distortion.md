@@ -16,7 +16,7 @@ last_modified_at : 2023.02.09
 ---
 ## ***#*** ***Radial Distortion*** vs ***Tangential Distortion***
 ---
-<span style="color:gray">***'Single Camera Calibration with OpenCV Library and C++'***</span></br>
+<span style="color:gray">***'Single Camera Calibration with OpenCV Library and C++'***</span><br>
 OpenCV를 통해서 Camera Calibration을 공부하고 있다.
 공부를 하면서 몰랐던 개념에 대해 간단하게 정리하고 싶어 블로그에 글을 남기게 되었다.
 <br>
@@ -35,10 +35,10 @@ OpenCV를 통해서 Camera Calibration을 공부하고 있다.
 
 
 
-<br><p align="center"><img src='https://user-images.githubusercontent.com/41114834/217764277-44095c90-9c34-462e-8fdc-ee529a779b17.png'></p></br>
+<br><p align="center"><img src='https://user-images.githubusercontent.com/41114834/217764277-44095c90-9c34-462e-8fdc-ee529a779b17.png'></p><br>
     <center><span style="color:gray">[그림] **Radial Distortion**</span></center>
 
-<br></br>
+<br>
 ## ***Equation - Radial disotrtion***
 -----
 $let)$                                                 <br>
@@ -49,8 +49,8 @@ $r^2 = x^2+y^2$                                        <br>
 
 
 ---
-$ x_d = x*(1 + k_1 * r^2 + k_2*r^4 + k_3*r^6)$         <br></br>
-$ y_d = y*(1 + k_1 * r^2 + k_2*r^4 + k_3*r^6)$         <br></br>
+$ x_d = x*(1 + k_1 * r^2 + k_2*r^4 + k_3*r^6)$         <br>
+$ y_d = y*(1 + k_1 * r^2 + k_2*r^4 + k_3*r^6)$         <br>
 ---
 
 <br>
