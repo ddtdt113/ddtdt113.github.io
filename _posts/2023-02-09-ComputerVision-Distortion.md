@@ -35,9 +35,11 @@ OpenCV를 통해서 Camera Calibration을 공부하고 있다.
 
 
 
-<br><img src='https://user-images.githubusercontent.com/41114834/217764277-44095c90-9c34-462e-8fdc-ee529a779b17.png'><br>
+<br>
+![radial](https://user-images.githubusercontent.com/41114834/217764277-44095c90-9c34-462e-8fdc-ee529a779b17.png)
+<br>
     <center><span style="color:gray">[그림] Radial Distortion</span></center><br>
-    
+
 ## ***Equation - Radial disotrtion***
 -----
 $let)$                                                 <br>
@@ -61,8 +63,10 @@ $ y_d = y*(1 + k_1 * r^2 + k_2*r^4 + k_3*r^6)$         <br>
     * 타원형 형태로 왜곡 분포가 달라짐
 
 
-<br><p align="center"><img src='https://user-images.githubusercontent.com/41114834/217755726-ede4cedc-e17b-4bb7-a720-c358ac2ed59e.png'></p></br>
-    <center><span style="color:gray">[그림] **Tangential Distortion**</span></center>
+<br>
+![tangential](https://user-images.githubusercontent.com/41114834/217755726-ede4cedc-e17b-4bb7-a720-c358ac2ed59e.png)
+<br>
+    <center><span style="color:gray">[그림] Tangential Distortion</span></center>
   <br>
 
 ## ***Equation - Tangential distortion***
