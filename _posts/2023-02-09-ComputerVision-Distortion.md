@@ -1,5 +1,5 @@
 ---
-title: "[ComputerVision] Single Camera Calibration Process"
+title: "[ComputerVision] Camera Calibration - Radial Distortion vs Tangential Distortion"
 excerpt: "blank"
 
 categories:
