@@ -41,11 +41,11 @@ OpenCV를 통해서 Camera Calibration을 공부하고 있다.
 <br></br>
 ## ***Equation - Radial disotrtion***
 -----
-$let)$                                                 <br></br>
-$x,y           = 2D \; pixel \; point  $               <br></br>
-$x_d, y_d = Distorted \; 2D \; point$                  <br></br>
-$k_1,k_2,k_3 =Radial \;distortion \;coefficient$       <br></br>
-$r^2 = x^2+y^2$                                        <br></br>
+$let)$                                                 <br>
+$x,y           = 2D \; pixel \; point  $               <br>
+$x_d, y_d = Distorted \; 2D \; point$                  <br>
+$k_1,k_2,k_3 =Radial \;distortion \;coefficient$       <br>
+$r^2 = x^2+y^2$                                        <br>
 
 
 ---
@@ -69,17 +69,17 @@ $ y_d = y*(1 + k_1 * r^2 + k_2*r^4 + k_3*r^6)$         <br></br>
 ## ***Equation - Tangential distortion***
 ---
 
-$let)$                                                  <br></br>
-$x,y           = 2D \; pixel \;point$                    <br></br>
-$x_d, y_d = Distorted \; 2D \; point$                   <br></br>
-$p_1,p_2 = Tangential \;distortion \;coefficient$       <br></br>
-$r^2 = x^2+y^2$                                         <br></br>
+$let)$                                                  <br>
+$x,y           = 2D \; pixel \;point$                    <br>
+$x_d, y_d = Distorted \; 2D \; point$                   <br>
+$p_1,p_2 = Tangential \;distortion \;coefficient$       <br>
+$r^2 = x^2+y^2$                                         <br>
 
 ---
 
-$x_d = x + (2 * p_1 * x * y + p_2 * (r^2 + 2*x^2))$      <br></br>
-$y_d = y + (p_1 * (r^2 + 2* y^2) + 2 * p_2 * x * y)$     <br></br>
-
+$x_d = x + (2 * p_1 * x * y + p_2 * (r^2 + 2*x^2))$      <br>
+$y_d = y + (p_1 * (r^2 + 2* y^2) + 2 * p_2 * x * y)$     <br>
+---
 
  
 
