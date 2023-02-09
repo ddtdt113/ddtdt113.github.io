@@ -1,11 +1,11 @@
 ---
-title: "테스트 포스팅"
-excerpt: "테스트로 블로그 포스팅을 해보자"
+title: "[ComputerVision] Single Camera Calibration Process"
+excerpt: ""
 
 categories:
-    - Blog_test
+    - ComputeVision
 tags:
-    - [Blog, test]
+    - [Camera, ComputerVision]
 
 
 toc: true
@@ -14,64 +14,33 @@ toc_sticky : true
 date: 2023.02.09
 last_modified_at : 2023.02.09
 ---
-# 테스트 포스팅을 해보자
-테스트 포스팅을 하고 있다.
-테스트를 어떻게 하면 좋을 지 생각해보았다.
-
-먼저 글을 작성해보자  
-<br>      
-
-# 글 작성  
- * 글을 작성하는 것은 다음과 같다.  
- * 밑줄은 이렇게 <u>밑줄</u>
-
-<br>
-
-# 이미지 추가
-![Kayak][logo]
-
-[logo]: http://www.gstatic.com/webp/gallery/2.jpg "To go kayaking."
-
-<br>
-
-# 링크 추가
-[Markdown Grammer : https://heropy.blog/2017/09/30/markdown/](https://heropy.blog/2017/09/30/markdown/)
-
-
-# 개행(줄 바꿈)
-
- '<'br>'을 입력하자</br>
+# ***#*** ***Radial Distortion*** vs ***Tangential Distortion***
+* Radial Distortion과 Tangential Distortion
+    * Radial Distortion은 무엇인가?
+    * Tangential Distortion은 무엇인가? 
 <br>
 <br>
 
 
-# 인용문
-> 인용문입니다
->> 인용문 테스트 입니다
->>>> 인용문 테스트 입니다
-
-<br>
-<br>
-
-# 수평선
+## ***Radial Distortion은 무엇인가?***
 ---
+![radial_distrotion][rd_image]
 
-***
+[rd_image]: /assets/img/posting_img/radial_distortion.png "[Imag] Radial Distortion" 
 
-___
+
+
+
+
+
+
+
+
+
+
 
 <br>
-<br>
-
-# 코드 블럭
-```
-코드블럭
-# python code
-# c++ code
-# This section is for adding codes.
-```
-
-
-
-# 여기까지
-일단은 이정도만 하자
+   
+#### ***Reference***
+---
+* Radial distortion image source : https://m.cafe.daum.net/smhan/e9OL/7 
