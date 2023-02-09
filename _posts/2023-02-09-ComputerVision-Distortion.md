@@ -50,7 +50,7 @@ OpenCV를 통해서 Camera Calibration을 공부하고 있다.
 
 
 
-<br><p align="center"><img src='https://user-images.githubusercontent.com/41114834/217756896-0ad6c682-232e-46e3-ab40-d04f077da2ff.svg'></p></br>
+<br><p align="center"><img src='https://user-images.githubusercontent.com/41114834/217764277-44095c90-9c34-462e-8fdc-ee529a779b17.png'></p></br>
     <center><span style="color:gray">[그림] **Radial Distortion**</span></center>
 
 
