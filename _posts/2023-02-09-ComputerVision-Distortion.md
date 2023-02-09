@@ -33,20 +33,25 @@ OpenCV를 통해서 Camera Calibration을 공부하고 있다.
 * **방사형 왜곡이 적용된 pixel point를 구하는 수식**  
 
 
->    $let)$                                                 <br></br>
->    $x,y           = 2D \; pixel \; point  $               <br></br>
->    $x_d, y_d = Distorted \; 2D \; point$                  <br></br>
->    $k_1,k_2,k_3 =Radial \;distortion \;coefficient$       <br></br>
->    $r^2 = x^2+y^2$                                        <br></br>
->>   $ x_d = x*(1 + k_1 * r^2 + k_2*r^4 + k_3*r^6)$         <br></br>
->>   $ y_d = y*(1 + k_1 * r^2 + k_2*r^4 + k_3*r^6)$         <br></br>
-
 
 
 <br><p align="center"><img src='https://user-images.githubusercontent.com/41114834/217764277-44095c90-9c34-462e-8fdc-ee529a779b17.png'></p></br>
     <center><span style="color:gray">[그림] **Radial Distortion**</span></center>
 
+<br></br>
+## ***Equation - Radial disotrtion***
+-----
+$let)$                                                 <br></br>
+$x,y           = 2D \; pixel \; point  $               <br></br>
+$x_d, y_d = Distorted \; 2D \; point$                  <br></br>
+$k_1,k_2,k_3 =Radial \;distortion \;coefficient$       <br></br>
+$r^2 = x^2+y^2$                                        <br></br>
 
+
+---
+$ x_d = x*(1 + k_1 * r^2 + k_2*r^4 + k_3*r^6)$         <br></br>
+$ y_d = y*(1 + k_1 * r^2 + k_2*r^4 + k_3*r^6)$         <br></br>
+---
 
 <br>
 
@@ -59,19 +64,24 @@ OpenCV를 통해서 Camera Calibration을 공부하고 있다.
 
 <br><p align="center"><img src='https://user-images.githubusercontent.com/41114834/217755726-ede4cedc-e17b-4bb7-a720-c358ac2ed59e.png'></p></br>
     <center><span style="color:gray">[그림] **Tangential Distortion**</span></center>
-
-
   <br>
 
->    $let)$                                                  <br></br>
->    $x,y           = 2D \; pixel \;point  $                 <br></br>
->    $x_d, y_d = Distorted \; 2D \; point$                   <br></br>
->    $p_1,p_2 = Tangential \;distortion \;coefficient$       <br></br>
->    $r^2 = x^2+y^2$                                         <br></br>
->>   $ x_d = x + (2 * p_1 * x * y + p_2 * (r^2 + 2*x^2))$          <br></br>
->>   $ y_d = y + (p_1 * (r^2 + 2* y^2) + 2 * p_2 * x * y)$          <br></br>
+## ***Equation - Tangential distortion***
+---
+
+$let)$                                                  <br></br>
+$x,y           = 2D \; pixel \;point$                    <br></br>
+$x_d, y_d = Distorted \; 2D \; point$                   <br></br>
+$p_1,p_2 = Tangential \;distortion \;coefficient$       <br></br>
+$r^2 = x^2+y^2$                                         <br></br>
+
+---
+
+$x_d = x + (2 * p_1 * x * y + p_2 * (r^2 + 2*x^2))$      <br></br>
+$y_d = y + (p_1 * (r^2 + 2* y^2) + 2 * p_2 * x * y)$     <br></br>
 
 
+ 
 
 
 
