@@ -22,13 +22,6 @@ OpenCV를 통해서 Camera Calibration을 공부하고 있다.
 
 <br>
 
-## ***목차***
----
-* Radial Distortion과 Tangential Distortion
-    * Radial Distortion은 무엇인가?
-    * Tangential Distortion은 무엇인가? 
-<br>
-<br>
 
 
 ## ***Radial Distortion은 무엇인가?***
