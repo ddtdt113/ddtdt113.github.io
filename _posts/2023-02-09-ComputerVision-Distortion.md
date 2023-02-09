@@ -28,17 +28,16 @@ OpenCV를 통해서 Camera Calibration을 공부하고 있다.
     * 볼록렌즈의 굴절률에 의해서 발생
     * 이미지의 왜곡 정도가 중심에서의 거리에 의해 결정되는 특징
     * 일반적인 경우에는 왜곡 계수(k1,k2,k3) 중 k1,k2만으로도 보정이 가능하지만 광각 렌즈같이 왜곡이 심한 렌즈의 경우에는 k3까지 사용
-<br></br>
+<br>
 
 * **방사형 왜곡이 적용된 pixel point를 구하는 수식**  
 
 
 
 
-<br><p align="center"><img src='https://user-images.githubusercontent.com/41114834/217764277-44095c90-9c34-462e-8fdc-ee529a779b17.png'></p><br>
-    <center><span style="color:gray">[그림] **Radial Distortion**</span></center>
-
-<br>
+<br><img src='https://user-images.githubusercontent.com/41114834/217764277-44095c90-9c34-462e-8fdc-ee529a779b17.png'><br>
+    <center><span style="color:gray">[그림] Radial Distortion</span></center><br>
+    
 ## ***Equation - Radial disotrtion***
 -----
 $let)$                                                 <br>
