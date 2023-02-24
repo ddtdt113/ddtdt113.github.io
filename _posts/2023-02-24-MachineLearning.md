@@ -65,6 +65,7 @@ Convolutional Layer의 역할은 한 줄로 정리하면 다음과 같다.
 특징점을 추출하는 과정은 필터(Filter) 혹은 커널(Kernel)의 개념이 등장한다. 필터나 커널은 다음과 같이 사용한다. 여기서는 커널이라는 표현을 사용하겠다. 커널은 한줄로 요약하면 다음과 같다. <br>
 
     "이미지에서 특징을 뽑아내는 도구"
+
 <br>
 
 커널은 ComputerVision에서 특정 이미지에 Edge detection을 하거나 Gaussian Blur를 적용시킬 때 사용한다.
@@ -72,6 +73,7 @@ Convolutional Layer의 역할은 한 줄로 정리하면 다음과 같다.
 
     Computer Vision의 필터는 이미 값이 "채워져"있다.
     Conv의 커널은 "학습" 을 통해 "채워야"한다.
+
 <br>
 
 ![1_xSzncJLaEjhoKC7LfM-cGA](https://user-images.githubusercontent.com/103714911/221086059-18f3c127-3e5e-412d-9563-adab0c38247c.png)
@@ -91,8 +93,10 @@ Conv의 커널은 인공 신경망의 weight와 bias 값에 해당하는 부분�
     1) Input 이미지에 지정된 사이즈의 커널을 곱한다.
     2) 해당 값을 Output Buffer쪽에 저장한다. 
 위와 같은 연산 과정으로 인해 Input과 Output의 Tensor Dimension에 차이가 생긴다.
-필요에 따라 패딩을 적용할 수 있으며 Stride 값에 따라 Kernel을 임의의 interval로 이동시켜 특징을 추출할 수 있다. 
-이에 대한 자세한 내용은 이곳을 참고하자.<br>
+필요에 따라 패딩을 적용할 수 있으며 Stride 값에 따라 Kernel을 임의의 interval로 이동시켜 특징을 추출할 수 있다. 이에 대한 자세한 내용은 이곳을 참고하자.
+
+<br>
+
 [합성곱연산](https://wikidocs.net/64066)
 
 
@@ -108,12 +112,14 @@ Conv의 커널은 인공 신경망의 weight와 bias 값에 해당하는 부분�
     2) Overfitting을 조절하여 과적합(Overfitting)을 방지한다.
     3) Feature extraction이 향상된다.
     4) 일반화 성능을 향상시켜준다.
+
 <br>
 
 Pooling Layer(풀링층)은 주로 2가지 종류를 사용한다.<br>
 
     1) Average Pooling Layer
     2) Max Pooling Layer
+
 <br>
 Pooling Layer는 n x n 커널을 stride 단위로 이미지에 적용시킨 뒤 커널 안에 포함된 픽셀들 중 Max 혹은 Average 값을 추출해 Output값으로 갖는다.
 
@@ -126,5 +132,5 @@ Pooling Layer는 n x n 커널을 stride 단위로 이미지에 적용시킨 뒤 
 
 ### *Reference List*
 ---
-* Convolution Neural Network : https://wikidocs.net/64066
-* 인공신경망과 이미지 : https://it-utopia.tistory.com/entry/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC-%ED%95%A9%EC%84%B1%EA%B3%B1%EC%8B%A0%EA%B2%BD%EB%A7%9DConvolutional-Neural-Network
+* [Convolution Neural Network](https://wikidocs.net/64066)
+* [인공신경망과 이미지](https://it-utopia.tistory.com/entry/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC-%ED%95%A9%EC%84%B1%EA%B3%B1%EC%8B%A0%EA%B2%BD%EB%A7%9DConvolutional-Neural-Network)
