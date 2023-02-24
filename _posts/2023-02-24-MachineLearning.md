@@ -121,7 +121,7 @@ Pooling Layer(풀링층)은 주로 2가지 종류를 사용한다.<br>
     2) Max Pooling Layer
 
 <br>
-Pooling Layer는 n x n 커널을 stride 단위로 이미지에 적용시킨 뒤 커널 안에 포함된 픽셀들 중 Max 혹은 Average 값을 추출해 Output값으로 갖는다.
+Pooling Layer는 n X n 커널을 stride 단위로 이미지에 적용시킨 뒤 커널 안에 포함된 픽셀들 중 Max 혹은 Average 값을 추출해 Output값으로 갖는다.
 
 
 ![img1 daumcdn](https://user-images.githubusercontent.com/41114834/221087002-b0989e46-d8dd-4daa-b76c-a87bd96f4006.png)
