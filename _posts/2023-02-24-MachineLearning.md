@@ -1,5 +1,5 @@
 ---
-title: "[MachineLearning] Machine Learning 공부노트 = Convoultion Neural Network의 개념"
+title: "[MachineLearning] Machine Learning 공부노트 - Convoultion Neural Network의 개념"
 excerpt: "ML"
 
 categories:
@@ -17,7 +17,8 @@ last_modified_at : 2023.02.24
 ## **정리에 앞서**
 ---
 <br>
-이번에 항상 공부하고 싶었던 Machine Learning을 공부할 기회가 생겨 공부한 내용들을 최대한 간략하게 적어보려한다.
+이번에 항상 공부하고 싶었던 Machine Learning을 공부할 기회가 생겨 공부한 내용들을 최대한 간략하게 적어보려한다.<br>
+
 시리즈물로 작성해야지.
 <br>
 
@@ -27,9 +28,11 @@ last_modified_at : 2023.02.24
 ---
 Convolution Neural Network은 "이미지 처리"에 특화된 Neural Network이다.
 주로 3가지 단계로 구성된다.
-1) Convolutional layer
-2) Activation function
-3) Pooling layer
+<br>
+
+    1) Convolutional layer
+    2) Activation function
+    3) Pooling layer
 <br>
 
 Activation Function은 이후에 따로 다룰 예정이기에 이번에는 Convolutional Layer와 Pooling Layer에 대해 정리해보자.
