@@ -103,7 +103,8 @@ Conv의 커널은 인공 신경망의 weight와 bias 값에 해당하는 부분�
 <br>
 
 ![conv4](https://user-images.githubusercontent.com/41114834/221082755-9d89c60e-5bab-4d49-a6c0-891f6087d084.png)
-    <center><span style="color:gray">[그림] 커널(Kernel)의 사용 방식</span></center><br>
+![3d-conv02](https://user-images.githubusercontent.com/103714911/221147754-f8e9d7c9-ade0-41b3-b631-5549268f40e3.PNG)
+    <center><span style="color:gray">[그림] 2차원(상),3차원(하) 커널(Kernel)의 사용 방식</span></center><br>
 
 
 ## **Pooling layer(풀링층)이란**
@@ -136,3 +137,4 @@ Pooling Layer는 n X n 커널을 stride 단위로 이미지에 적용시킨 뒤 
 ---
 * [Convolution Neural Network](https://wikidocs.net/64066)
 * [인공신경망과 이미지](https://it-utopia.tistory.com/entry/%EB%B9%85%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B6%84%EC%84%9D%EA%B8%B0%EC%82%AC-%ED%95%A9%EC%84%B1%EA%B3%B1%EC%8B%A0%EA%B2%BD%EB%A7%9DConvolutional-Neural-Network)
+* [3차원 합성곱 연산](https://excelsior-cjh.tistory.com/180)
