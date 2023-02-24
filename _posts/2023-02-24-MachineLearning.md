@@ -97,8 +97,10 @@ Conv의 커널은 인공 신경망의 weight와 bias 값에 해당하는 부분�
 
 <br>
 
-[합성곱연산](https://wikidocs.net/64066)
+[합성곱연산](https://wikidocs.net/64066)<br>
+[3차원 합성곱 연산](https://excelsior-cjh.tistory.com/180)<br>
 
+<br>
 
 ![conv4](https://user-images.githubusercontent.com/41114834/221082755-9d89c60e-5bab-4d49-a6c0-891f6087d084.png)
     <center><span style="color:gray">[그림] 커널(Kernel)의 사용 방식</span></center><br>
