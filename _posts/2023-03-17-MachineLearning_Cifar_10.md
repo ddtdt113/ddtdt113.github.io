@@ -29,12 +29,12 @@ last_modified_at : 2023.03.17
 
 ## **torchvision과 CIFAR-10이란 무엇인가?**
 ---
-1) torchvision
+* torchvision
     * 영상 분야를 위해 특화된 torch package
 <br>
 
 
-2) CIFAR-10
+* CIFAR-10
     * MNIST, IMAGENET 같은 머신러닝을 위해 사용되는 데이터셋(Data-Set)  
     * 다음과같은 Label을 가짐  
         * 비행기 -airplane   
