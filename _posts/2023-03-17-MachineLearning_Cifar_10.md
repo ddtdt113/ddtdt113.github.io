@@ -34,18 +34,18 @@ last_modified_at : 2023.03.17
 <br>
 
 2) CIFAR-10
-    * MNIST, IMAGENET 같은 머신러닝을 위해 사용되는 데이터셋(Data-Set)
-    * 다음과같은 Label을 가짐
-         1. 비행기 -airplane
-         2. 자동차 -automobile
-         3. 새     -bird
-         4. 고양이 -cat
-         5. 사슴   -deer
-         6. 개     -dog
-         7. 개구리 -frog
-         8. 말     -horse
-         9. 배     -ship
-        10. 트럭   -truck
+    * MNIST, IMAGENET 같은 머신러닝을 위해 사용되는 데이터셋(Data-Set)<br>
+    * 다음과같은 Label을 가짐<br>
+         1. 비행기 -airplane <br>
+         2. 자동차 -automobile <br>
+         3. 새     -bird <br>
+         4. 고양이 -cat <br>
+         5. 사슴   -deer <br>
+         6. 개     -dog <br>
+         7. 개구리 -frog <br>
+         8. 말     -horse <br>
+         9. 배     -ship <br>
+        10. 트럭   -truck <br>
     
 ![CIFAR-10](https://user-images.githubusercontent.com/103714911/225829591-5facd5f2-fe95-44a1-b90d-7dbb6f635244.png)
 
@@ -91,8 +91,10 @@ testloader = torch.utils.data.DataLoader(testset, batch_size=batch_size,
 classes = ('plane', 'car', 'bird', 'cat',
            'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 ```
+
 ### 1) CIFAR-10 Image Data Viewer
  * CIFAR-10 데이터를 matplotlib을 통해 직접 확인해보자. 
+
 ```
 #python sample code : https://tutorials.pytorch.kr/beginner/blitz/cifar10_tutorial.html#cifar10
 import torch
@@ -147,6 +149,7 @@ if __name__ == '__main__':
 <br>
 
 ### **2. 시험용 데이터로 신경망 트레이닝 및 검사하기**
+
 ```
 #python sample code
 
@@ -258,6 +261,7 @@ if __name__ == '__main__':
 ```
 
 ### **3. 학습된 모델 로드 및 검증**
+
 ```
 import torch
 import torchvision
