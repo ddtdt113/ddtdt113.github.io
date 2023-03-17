@@ -36,16 +36,18 @@ last_modified_at : 2023.03.17
 2) CIFAR-10
     * MNIST, IMAGENET 같은 머신러닝을 위해 사용되는 데이터셋(Data-Set)  
     * 다음과같은 Label을 가짐  
-         1. 비행기 -airplane   
-         2. 자동차 -automobile   
-         3. 새     -bird   
-         4. 고양이 -cat   
-         5. 사슴   -deer   
-         6. 개     -dog   
-         7. 개구리 -frog   
-         8. 말     -horse   
-         9. 배     -ship   
-        10. 트럭   -truck  
+        * 비행기 -airplane   
+        *  자동차 -automobile   
+        *  새     -bird   
+        *  고양이 -cat   
+        *  사슴   -deer   
+        *  개     -dog   
+        *  개구리 -frog   
+        *  말     -horse   
+        *  배     -ship   
+        *  트럭   -truck  
+
+<br>
 
 
 ![CIFAR-10](https://user-images.githubusercontent.com/103714911/225829591-5facd5f2-fe95-44a1-b90d-7dbb6f635244.png)
