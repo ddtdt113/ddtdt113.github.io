@@ -16,14 +16,14 @@ last_modified_at : 2023.03.17
 ---
 ## **CIFAR-10 데이터 셋을 활용한 CNN**
 ---
-<br>
 
-* CIFAR-10 데이터 셋과 CNN을 사용하여 Image Classification을 해보자. <br>
+* CIFAR-10 데이터 셋과 CNN을 사용하여 Image Classification을 해보자. 
+<br>
 
 ## **Index**
 ---
-1) torchvision과 CIFAR-10이란 무엇인가?
-2) CIFAR-10을 활용한 분류기(Classifier) 학습하기
+* torchvision과 CIFAR-10이란 무엇인가?
+* CIFAR-10을 활용한 분류기(Classifier) 학습하기
 
 <br>
 
