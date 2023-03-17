@@ -60,9 +60,9 @@ last_modified_at : 2023.03.17
 
 
 * 주의사항
-    1) torchvision data set output  : [0,1] 범위를 갖는 PILImage
-    2) [0,1] PILImage -> [-1,1] 범위로 정규화된 Tensor 변환 필요
-    3) 모든 테스트는 pycharm 환경에서 진행
+    * torchvision data set output  : [0,1] 범위를 갖는 PILImage
+    * [0,1] PILImage -> [-1,1] 범위로 정규화된 Tensor 변환 필요
+    * 모든 테스트는 pycharm 환경에서 진행
 
 
 <br>
