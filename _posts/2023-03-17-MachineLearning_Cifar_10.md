@@ -97,7 +97,7 @@ classes = ('plane', 'car', 'bird', 'cat',
            'deer', 'dog', 'frog', 'horse', 'ship', 'truck')
 ```
 
-### 1) CIFAR-10 Image Data Viewer
+### 2) CIFAR-10 Image Data Viewer
  * CIFAR-10 데이터를 matplotlib을 통해 직접 확인해보자. 
 
 ```
