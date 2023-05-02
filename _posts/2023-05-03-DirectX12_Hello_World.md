@@ -97,8 +97,12 @@ D3D12HelloWindow
 3) Pipeline 초기화, Asset 초기화
      ![image](https://user-images.githubusercontent.com/41114834/235730380-ad7e69de-d4eb-4d1e-b2f5-6444f65734c8.png)
 
+<br>
+
 4) MainLoop를 통해 매 틱당 연산을 진행
+      
       ![image](https://user-images.githubusercontent.com/41114834/235729838-9aee95ca-abad-41de-bc78-6a1c0d868644.png)
+
       * 실질적으로 이 부분에서는 [WM_QUIT](https://learn.microsoft.com/ko-kr/windows/win32/winmsg/wm-quit) 메세지가 나타났는지 매 틱 확인하는 역할을 한다.
       * 이때 [Callback함수](https://namu.wiki/w/callback%20%ED%95%A8%EC%88%98)인  Win32Application::WindowProc가 DispatchMessage 이후 매 틱당 호출되게 된다. 자세한 내용은 Callback함수를 참고하자.
 
