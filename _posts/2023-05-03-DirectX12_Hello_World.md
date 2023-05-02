@@ -68,7 +68,7 @@ D3D12HelloWindow
     * [LPSTR](https://espada4897.wordpress.com/2014/12/23/lpstr%EA%B3%BC-lpctstr%EC%97%90-%EA%B4%80%ED%95%B4%EC%84%9C/) : *char
     * [nCmdShow](https://stackoverflow.com/questions/15240036/what-is-ncmdshow)
 * 해당 부분의 역할
-    * Window Size, 타이틀바에 들어갈 메세지를 설정한 D3D12HelloWorld 오브젝트를 만든다. (Windows의 탄생!)
+    * Window Size, 타이틀바에 들어갈 메세지를 설정한 D3D12HelloWorld 오브젝트를 만든다. (띄울 창(window)의 탄생!)
 
 <br>
 
