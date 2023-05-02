@@ -88,6 +88,9 @@ D3D12HelloWindow
 
 2) 띄울 창(window) 관련 변수들 초기화 및 오브젝트 생성
     ![image](https://user-images.githubusercontent.com/41114834/235729673-87d25216-37ae-43cb-a3b6-1e934c953392.png)
+
+<br>
+
     ![image](https://user-images.githubusercontent.com/41114834/235729872-652491fa-f228-4983-93c5-028d179a6645.png)
 <br>
 
