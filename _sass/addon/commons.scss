@@ -2,7 +2,7 @@
   The common styles
 */
 
-@import 'https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;600&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300;600&display=swap";
 
 
 html {
@@ -35,7 +35,7 @@ body {
   background: var(--body-bg);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
-  font-family: 'Gothic A1', sans-serif;
+  font-family: "Gothic A1", sans-serif;
   line-height: 1.75;
 }
 
@@ -701,8 +701,7 @@ $sidebar-display: "sidebar-display";
   overflow-y: auto;
   width: $sidebar-width;
   z-index: 99;
-  /* background: var(--sidebar-bg); */
-  background: 'https://github.com/ddtdt113/ddtdt113.github.io/assets/41114834/c82c89ce-0f4b-44e8-bda3-5fddb716db78';
+  background: "https://github.com/ddtdt113/ddtdt113.github.io/assets/41114834/c82c89ce-0f4b-44e8-bda3-5fddb716db78";
   background-size: 100% 100%;
   background-position: center;
 
