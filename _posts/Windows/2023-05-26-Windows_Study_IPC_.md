@@ -1,5 +1,5 @@
 ---
-title: "[Windows] IPC - IPC란 무엇인가?"
+title: "[Windows] IPC - IPC에 대해 알아보자!"
 excerpt: "Windows, IPC"
 
 categories:
@@ -14,115 +14,145 @@ toc_sticky : true
 date: 2023.05.03
 last_modified_at : 2023.05.03
 ---
-## **Directx 12 -1.Hello Window**
+## **IPC에 대해 알아보자**
 ---
+* IPC란 무엇인가?
+    * IPC란 Interprocess Communications의 약자로, Windows 운영 체제 내 애플리케이션 간의 통신 및 데이터 공유를 용이하게 하는 메커니즘을 의미한다.
+    * 해당 메커니즘 내에서 프로세스 간 통신을 할 수 있도록 해준다.
 
-* DirectX 12를 차근차근 공부해보자 시리즈의 대망의 첫번째 포스팅
 <br>
-<br>
 
 
-## **Sample Project** 
+## **IPC를 사용하는 서버와 클라이언트**
 ---
-Github from : [DirectX 12 - Hello Window](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12HelloWorld)
+* IPC 서버
+    * 애플리케이션 또는 클라이언트 요청에 응답하는 프로세스
 
 <br>
 
-## **Hello Window!**
+* IPC 클라이언트
+    * 애플리케이션 또는 다른 애플리케이션 또는 프로세스에서 서비스를 요청하는 프로세스
+
+<br>
+
+## **파이프**
 ---
-![image](https://user-images.githubusercontent.com/41114834/235722862-6f540b09-c777-4cc5-ab33-98a7242b87ed.png)
+### **파이프** ###
+* 프로세스에서 통신을 위해 사용하는 공유 메모리의 섹션
+* 파이프 서버 
+    * 파이프를 만드는 프로세스
+* 파이프 클라이언트
+    * 파이프에 연결하는 프로세스
+
 <br>
 
-* DirectX12에서의 Hello World는 무엇일까? 그건 바로 Window를 띄우는 것이다! Hello Window!
-* 어떻게 창이 띄워지는 지 간략하게 알아보자.
+### **파이프 정보** ###
+* 익명 파이프
+    * 부모 프로세스와 자식 프로세스 간에 데이터를 전송하는 명명되지 않은 단방향 파이프
+    * 항상 로컬에서 작동(네트워크 통신에는 사용 불가)
+
+* 명명된 파이프
+    * 파이프 서버와 하나 이상의 파이프 클라이언트 간의 통신을 위해 명명된 단방향 또는 이중 파이프.
+    *  명명된 파이프의 모든 인스턴스는 동일한 파이프 이름을 공유하나 각 인스턴스에는 자체 버퍼와 핸들이 있으며 클라이언트 / 서버 통신을 위한 별도의 통로 제공
+    * 인스턴스를 사용하면 여러 파이프 클라이언트에서 동일한 명명된 파이프를 동시 사용 가능
 
 <br>
 
-## **Hello Window 프로젝트 구조**
----
+### **명명된 파이프의 파이프 이름** ###
+    * 파이프 서버에서 CreateNamedPipe함수를 호출하여 명명된 파이프의 인스턴스를 하나 이상 만들 때 파이프의 이름을 지정.
+    * 파이프 클라이언트는 Createfile 또는 CallNamedPipe함수를 호출하여 명명된 파이프의 인스턴스에 연결할 때 파이프 이름을 지정
+
+<br>
+
+### **명명된 파이프의 이름 지정 양식** ###
 ```
-D3D12HelloWindow
-    | ---- D3D12HellowWindow.h / cpp
-    | ---- d3dx12.h
-    | ---- DxSample.h /cpp
-    | ---- DxSampleHelper.h
-    | ---- Main.cpp
-    | ---- stdafx.h / cpp
-    | ---- Win32Application.h /cpp
+    파이프 이름 양식) \\ServerName\pipe\PipeName
+    
+    파이프 이름 예시) \\.\pipe\PipeName
+``` 
+* ServerName
+    * 로컬 컴퓨터를 지정하기 위한 원격 컴퓨터 또는 마침표의 이름
+    * 파이프 서버는 네트워크를 사용할 수 없기에 파이프 이름 예시와 같이 서버 이름에 마침표가 있어야 함.
+* PipeName
+    * 이름 문자열
+    * 숫자 및 특수 문자를 포함하여 백슬래시 이외의 문자 포함 가능
+    * 최대 256자까지 가능
+    * 대/소문자 구분하지 않음
 
+<br>
+
+### **명명된 파이프 열기 모드** ###
+* 파이프 서버는 CreateNamedPipe 함수의 dwOpenMode 매개 변수에서 파이프 액세스, 겹침 및 쓰기 모드를 지정한다. 파이프 클라이언트는 CreateFile 함수를 사용하여 파이프 핸들에 대해 이러한 열린 모드를 지정할 수 있다.
+
+<br>
+
+### **액세스 모드** ###
+* 파이프 엑세스 모드 설정은 파이프 서버의 핸들 및 연결된 읽기 또는 쓰기 엑세스를 지정하는 것과 같다.
+![AccessMode](https://github.com/ddtdt113/ddtdt113.github.io/assets/41114834/30ac21c5-6521-4080-99ae-f65314196ecc)
+
+* PIPE_ACCESS_INBOUN
+    * 파이프 서버가 만든 파이프는 파이프 서버에 대해 읽기 전용, 클라이언트에 대해 쓰기 전용
+* PIPE_ACCESS_OUTBOUND
+    * 파이프 서버가 만든 파이프는 파이프 서버에 대해 쓰기 전용, 클라이언에 대해 읽기 전용
+* PIPE_ACCESS_DUPLEX
+    * 파이프 서버가 만든 파이프는 파이프 서버에 대해 읽기/쓰기 가능, 클라이언트에 대해 읽기/쓰기 가능
+
+<br>
+
+* CreateFile을 사용하여 명명된 파이프에 연결하는 파이프 클라이언트는 파이프 서버에 지정한 엑세스 모드와 호환된는 dwDesiredAccess  매개 변수에 액세스 권한을 지정해야 함
+```
+파이프 서버 
+    생성된 파이프)
+        * PIPE_ACCESS_OUTBOUND
+
+파이프 클라이언트
+    파이프 핸들을 열기 위한 액세스 권한)
+        * GENERIC_READ
 ```
 
-## **Hello Window 함수 흐름**
----
-### ***Entry Point***
-```
-    - Main.cpp - WinMain()
-```
 <br>
 
-![image](https://user-images.githubusercontent.com/41114834/235724859-23e74743-b994-4326-b1a3-b449f964ba7c.png)
+### **명명된 파이프 유형, 읽기 및 대기 모드** ###
+* 형식 모드
+    * 데이터가 명명된 파이프에 기록되는 방법 결정
+    * 데이터는 명명된 파이프를 통해 바이트 스트림 또는 메세지 스트림으로 전송
+    * 파이프 서버는 CreateNamedPipe를 호출하여 명명된 파이프의 인스턴스를 만들 때 파이프 유형 지정
+        * 형식모드는 파이프의 모든 인스턴스에 대해 동일해야 함
+    * 바이트 형식 파이프 제작
+        * PIPE_TYPE_BYTE를 지정 혹은 기본값 사용
+    * 메세지 형식 파이프 제작
+        * PIPE_TYPE_MESSAGE 지정
+* 읽기 모드
+    * 명명된 파이프에서 데이트럴 읽는 방법 결정
+    * CreateNamedPipe 호출 시 파이프 핸들의 초기 읽기 모드 지정
+    * 바이트 읽기 모드 또는 메시지 읽기 모드에서 데이터를 읽을 수 있음
+        * 바이트 형식 파이프에 대한 핸들은 바이트 읽기 모드에서만 존재
+        * 메세지 형식 파이프에 대한 핸들은 바이트 읽기 또는 메세지 읽기 모드
+    * 바이트 읽기 모드 파이프 제작
+        * PIPE_READMODE_BYTE 혹은 기본값 사용
+    * 메세지 읽기 모드 파이프 핸들 제작
+        * PIPE_READMODE_MESSAGE 지정
+* 대기 모드
+    * 파이프 핸들의 대기 모드는 Readfile, WriteFile, ConnectNamedPipe함수가 작업 처리 결정
+    * 차단 대기 모드에서 함수는 파이프의 다른 쪽 끝에 있는 프로세스가 작업을 완료할 때까지 무기한 대기
+    * 비차단 대기 모드에서 함수는 무기한 대기가 필요한 상황에서 즉시 반환
+    * ReadFile
+        * 파이프가 비어 있을 때 파이프 핸들의 대기 모드에 의해 영향을 받음
+        * 차단 대기 핸들 사용 시 스레드 쓰기에서 파이프의 다른 쪽 끝에 데이터를 사요할 수 있을 때까지 작업이 완료 되지 않음.
+            * 비 블록킹 대기 핸들 사용하면 즉시 0을 반환, GetLastError 함수는 ERROR_NO_DATA 반환
+    * WriteFile
+        * 파이프 버퍼에 공간이 부족한 경우 파이프 핸들의 대기 모드에 의해 영향
+        * 차단 대기 핸들을 사용시 파이프의 다른 쪽 끝에서 읽는 스레드에 의해 버퍼에 충분한 공간이 생성될 때까지 쓰기 작업 완료되지 않음.
+            비 블로킹 대기 핸들 사용 시 쓰기 작업은 바이트를 작성하지 않거나 버퍼가 보유한 바이트 수를 작성하지 않고 즉시 0 반환
 
-* WINAPI : 윈도우 용 콘솔 앱을 제작할 때 사용하는 Windows api
- * 콘솔앱이 실질적으로 시작되는 부분!
-    * HINSTANCE : 프로그램의 자체의 주소!
-    * [LPSTR](https://espada4897.wordpress.com/2014/12/23/lpstr%EA%B3%BC-lpctstr%EC%97%90-%EA%B4%80%ED%95%B4%EC%84%9C/) : *char
-    * [nCmdShow](https://stackoverflow.com/questions/15240036/what-is-ncmdshow)
-* 해당 부분의 역할
-    * Window Size, 타이틀바에 들어갈 메세지를 설정한 D3D12HelloWorld 오브젝트를 만든다. (띄울 창(window)의 탄생!)
-
-<br>
-
-### ***Win32Application::Run(&sample, hInstance, nCmdShow)***
----
-* 위 함수는 다음과 같은 역할을 한다.
-    * 프로세스 초기화
-    * 띄울 창(window) 관련 변수들 초기화 및 오브젝트 생성
-    * Pipeline 초기화, Asset 초기화
-    * MainLoop를 통해 매 틱당 연산을 진행
-
-<br>
-
-1) 프로세스 초기화
-    ![image](https://user-images.githubusercontent.com/41114834/235729467-8fd79139-86e6-4b0c-9f31-f90d1202f76c.png)
-<br>
-
-2) 띄울 창(window) 관련 변수들 초기화 및 오브젝트 생성
-    ![image](https://user-images.githubusercontent.com/41114834/235729673-87d25216-37ae-43cb-a3b6-1e934c953392.png)
-<br>
-
-![image2](https://user-images.githubusercontent.com/41114834/235729872-652491fa-f228-4983-93c5-028d179a6645.png)
-<br>
-
-3) Pipeline 초기화, Asset 초기화
-     ![image](https://user-images.githubusercontent.com/41114834/235730380-ad7e69de-d4eb-4d1e-b2f5-6444f65734c8.png)
-
-<br>
-
-4) MainLoop를 통해 매 틱당 연산을 진행
-      
-![image](https://user-images.githubusercontent.com/41114834/235729838-9aee95ca-abad-41de-bc78-6a1c0d868644.png)
-
-* 실질적으로 이 부분에서는 [WM_QUIT](https://learn.microsoft.com/ko-kr/windows/win32/winmsg/wm-quit) 메세지가 나타났는지 매 틱 확인하는 역할을 한다.
-    * 이때 [Callback함수](https://namu.wiki/w/callback%20%ED%95%A8%EC%88%98)인  Win32Application::WindowProc가 DispatchMessage 이후 매 틱당 호출되게 된다. 자세한 내용은 Callback함수를 참고하자.
-
-<br>
+    * ConnectNamedPipe
+        * 연결된 클라이언트가 없너가 파이프 인스턴스에 연결하기 위해 대기하는 경우 파이프 핸들의 대기 모드에 의해 영향 받음
+        * 차단 대기 핸들 사용 시 파이프 클라이언트가 CreateFile 또는 CallNamedPipe 함수를 호출하여 파이프 인스턴스에 연결할 때까지 대기
+            * 비 블로킹 대기 핸들 사용 시, 연결 작업이 즉시 0 반환, GetLastError 함수는 ERROR_PIPE_LISTENING 반환
 
 
-### ***Win32Application::WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)***
----
-* 위 함수에서는 다음과 같은 역할을 한다.
-    * 입력값에 대한 이벤트 처리
-        * WM_CREATE, WM_KEYDOWN, WM_KEYUP, WM_PAINT, WM_DESTROY
-    * OnUpdate(), OnRender()를 통해 매 틱당 parameter 업데이트, 업데이트된 결과 Render를 수행한다.
 
-    ![image](https://user-images.githubusercontent.com/41114834/235732247-77499df9-a79b-4bc5-aab6-ff5dcbb44b87.png)
-
-<br>
-
-## ***OnRender(), OnUpdate()에서는 구체적으로 어떤 역할을 할까?***
----
- * 이는 다음 포스팅에서 알아보자
 
  ## ***Reference***
  ---
- * [Microsoft document](https://learn.microsoft.com/en-us/windows/win32/direct3d12/direct3d-12-graphics)
+ * [Microsoft document](https://learn.microsoft.com/ko-kr/windows/win32/ipc/interprocess-communications)
