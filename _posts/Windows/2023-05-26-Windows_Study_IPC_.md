@@ -2,10 +2,8 @@
 title: "[Windows] IPC - IPC에 대해 알아보자!"
 excerpt: "Windows, IPC"
 
-categories:
-    [Windows, IPC]
-tags:
-    - [C++, IPC]
+categories: [Windows, IPC]
+tags: [C++, IPC]
 
 
 toc: true
