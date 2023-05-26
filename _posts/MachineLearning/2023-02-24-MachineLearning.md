@@ -2,10 +2,8 @@
 title: "[MachineLearning] Machine Learning 공부노트 - Convoultion Neural Network의 개념"
 excerpt: "ML"
 
-categories:
-    - MachineLearning
-tags:
-    - [MachineLearning, AI]
+categories: [MachineLearning, PyTorch]
+tags: [MachineLearning, AI]
 
 
 toc: true

@@ -2,10 +2,9 @@
 title: "[MachineLearning] Machine Learning 공부노트 - CIFAR-10 데이터 셋을 활용한 CNN"
 excerpt: "ML"
 
-categories:
-    - MachineLearning
-tags:
-    - [MachineLearning, AI]
+categories: [MachineLearning, PyTorch]
+tags: [MachineLearning, AI]
+
 
 
 toc: true

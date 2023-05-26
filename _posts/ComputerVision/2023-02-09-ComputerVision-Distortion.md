@@ -2,10 +2,8 @@
 title: "[ComputerVision] Camera Calibration - Radial Distortion vs Tangential Distortion"
 excerpt: "blank"
 
-categories:
-    - ComputeVision
-tags:
-    - [Camera, ComputerVision]
+categories: [ComputeVision, Camera]
+tags: [Camera, ComputerVision]
 
 
 toc: true

@@ -1,11 +1,11 @@
 ---
-title: "[DirectX12] DirectX12 공부노트 - Hello Window"
-excerpt: "DirectX, Graphics"
+title: "[Windows] IPC - IPC란 무엇인가?"
+excerpt: "Windows, IPC"
 
 categories:
-    - DirectX, Graphics
+    [Windows, IPC]
 tags:
-    - [DirectX, Graphics]
+    - [C++, IPC]
 
 
 toc: true
