@@ -9,8 +9,8 @@ tags: [C++,IPC]
 toc: true
 toc_sticky : true
 
-date: 2023.05.03
-last_modified_at : 2023.05.03
+date: 2023.05.26
+last_modified_at : 2023.05.26
 ---
 ## **IPC에 대해 알아보자**
 ---
