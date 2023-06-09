@@ -73,10 +73,10 @@ last_modified_at : 2023.06.09
 * VertexBuffer와 IndexBuffer를 업로드 하는 방식은 다음과 같다.
 
 ```
-1) CPU에서 Vertex 혹은 Index 데이터를 들고 있을 Heap Buffer를 만든다. 
-2) GPU가 CPU로 접근하여 Data를 읽도록 할 Heap Buffer(Uploader용 Buffer)를 만들어주자.
-3) Subresource를 만든다.
-4) 위 Heap Buffer과 SubResource를 commandList에 Job으로 던져 넣어주자. 
+* CPU에서 Vertex 혹은 Index 데이터를 들고 있을 Heap Buffer를 만든다. 
+* GPU가 CPU로 접근하여 Data를 읽도록 할 Heap Buffer(Uploader용 Buffer)를 만들어주자.
+* Subresource를 만든다.
+* 위 Heap Buffer과 SubResource를 commandList에 Job으로 던져 넣어주자. 
 
 ```
 <br>
@@ -203,13 +203,13 @@ last_modified_at : 2023.06.09
 4) IMGUI를 통해 GUI를 붙여보자.
 ```
 
+<br>
 
 ## **Sample Project** 
 ---
 Github from : [DirectX 12 - Hello Triangle](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12HelloWorld)
 
 <br>
-
 
 
  ## ***Reference***
