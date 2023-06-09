@@ -60,6 +60,7 @@ last_modified_at : 2023.06.09
         };
 
 ```
+
 <br>
 
 * DirectX의 front face는 clock wise 방향이기 때문에 0-1-2, 0-2-3 순서로 IndexArray를 만들어주자.
