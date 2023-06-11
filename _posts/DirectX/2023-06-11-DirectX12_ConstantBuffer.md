@@ -19,7 +19,7 @@ last_modified_at : 2023.06.11
 
 <br>
 
-## **IndexBuffer를 파이프라인에 탑재해보자**
+## **ConstantBuffer를 파이프라인에 탑재해보자**
 ---
 ![image](https://github.com/ddtdt113/ddtdt113.github.io/assets/41114834/d910ad19-3677-456a-9598-9d4e51d28a0e)
 
