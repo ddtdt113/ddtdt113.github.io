@@ -58,17 +58,17 @@ last_modified_at : 2023.06.11
     m_scissorRect(0, 0, static_cast<LONG>(width), static_cast<LONG>(height)),
     m_rtvDescriptorSize(0),
     m_constantBufferData{}
-{
+    {
 
-   m_vertexBufferCPU = nullptr;
-   m_indexBufferCPU = nullptr;
+        m_vertexBufferCPU = nullptr;
+        m_indexBufferCPU = nullptr;
 
-    m_vertexBufferGPU = nullptr;
-    m_indexBufferGPU = nullptr;
-    m_vertexBufferUploader = nullptr;
-    m_indexBufferUploader = nullptr;    
-    
-}
+        m_vertexBufferGPU = nullptr;
+        m_indexBufferGPU = nullptr;
+        m_vertexBufferUploader = nullptr;
+        m_indexBufferUploader = nullptr;    
+        
+    }
 ```
 
 <br>
