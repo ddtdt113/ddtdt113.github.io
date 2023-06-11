@@ -123,6 +123,8 @@ void LoadPipeline()
 
 * ConstantBuffer를 직접 생성하고 여기에 데이터를 채워보자
 
+<br>
+
 ```
 // Load the sample assets.
 void D3D12Visualizer::LoadAssets()
@@ -204,7 +206,6 @@ void D3D12Visualizer::LoadAssets()
 * 아래는 실제로 매 틱당 constant buffer에 복사되는 값들을 나타내는 함수이다.
 * m_constnatBufferData는 클래스의 멤버변수로, Update 함수가 call 될때마다 값이 변경되고 이를 GPU로 업로드 한다. 
 
-
 <br>
 
 ```
@@ -245,6 +246,8 @@ void D3D12Visualizer::PopulateCommandList()
 
 ```
 
+<br>
+
 * 지금까지 ConstantBuffer를 만들고 ConstantBuffer에 들어갈 데이터들을 모두 바인딩 해주었다.
 * 이제는 Shader를 수정하여 ConstantBuffer를 사용하여 사각형을 이동할 수 있도록 HLSL 코드를 변경해보자.
 
@@ -284,9 +287,6 @@ float4 PSMain(PSInput input) : SV_TARGET
 
 ```
 
-
-
-
 <br>
 
 ## **다음 포스팅에서는**
@@ -304,7 +304,7 @@ float4 PSMain(PSInput input) : SV_TARGET
 
 ## **Sample Project** 
 ---
-Github from : [DirectX 12 - Hello Trianglem Hello Constant Buffers](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12HelloWorld)
+Github from : [DirectX 12 - Hello Triangle, Hello Constant Buffers](https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12HelloWorld)
 
 <br>
 
