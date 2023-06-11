@@ -49,7 +49,6 @@ last_modified_at : 2023.06.11
     // 생성한 struct를 변수로 선언하여 클래스의 멤버 변수로 사용하도록 하자.
      SceneConstantBuffer m_constantBufferData;
 
-
 // D3D12Visualizer.cpp
 
      D3D12Visualizer::D3D12Visualizer(UINT width, UINT height, std::wstring name) :
