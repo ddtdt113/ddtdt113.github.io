@@ -5,7 +5,6 @@ excerpt: "DirectX, Graphics"
 categories: [DirectX, Graphics]
 tags: [DirectX, Graphics]
 
-
 toc: true
 toc_sticky : true
 
