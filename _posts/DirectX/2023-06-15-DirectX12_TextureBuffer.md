@@ -31,10 +31,10 @@ last_modified_at : 2023.06.15
     * Texture용 Sampler Descriptor 선언
 * LoadAsset()
     * TextureBuffer를 Cpu -> GPU로 바인딩 시킬 Buffer 생성 및 CommandList에 업로드
-* PopulateCommandList
+* PopulateCommandList()
     * Texture Buffer Heap 업로드
     * Texture Buffer용 Root DescriptorTable 생성
-* GenerateTextureData
+* GenerateTextureData()
     * Texture Data 생성
 
 
