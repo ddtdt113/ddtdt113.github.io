@@ -216,7 +216,7 @@ LRESULT D3DApp::MsgProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 ```
 <br>
 
-* 자 이제 message를 받지 못했을 경우에는 3가지 함수가 실행되죠. Timer.Tick은 게임 타이머의 Tick(deltaTime)을 업데이트 해줍니다. 그리고 Update Constants 함수를 통해 앞으로 사용할 셰이더의 변수를 업데이트 해 주고, Draw 함수를 통해서 CommandList에 Draw하라고 명령을 던집니다. 여기서 Update함수와 Draw함수는 모두 가상함수로 되어있으며 해당 부분의 정의는 모두 상속받은 클래스인 Visualizer에 정의되어 있습니다. 
+* 자 이제 message를 받지 못했을 경우에는 3가지 함수가 실행되죠. Timer.Tick은 게임 타이머의 Tick(deltaTime)을 업데이트 해줍니다. 그리고 Update Constants 함수를 통해 앞으로 사용할 셰이더의 변수를 업데이트 해 주고, Draw 함수를 통해서 GPU에게 CommandList를 던지며 Draw하라고 명령을 내립니다. 여기서 Update함수와 Draw함수는 모두 가상함수로 되어있으며 해당 부분의 정의는 모두 상속받은 클래스인 Visualizer에 정의되어 있습니다. 
 
 
 <br>
