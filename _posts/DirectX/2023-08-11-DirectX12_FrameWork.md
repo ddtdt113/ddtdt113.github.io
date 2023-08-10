@@ -25,8 +25,9 @@ last_modified_at : 2023.08.11
 ![gif](https://github.com/ddtdt113/ddtdt113.github.io/assets/41114834/e414235b-a522-4b68-973d-bf2d52ab08f6)
 <br>
 
- ***[DirectX12 너무 어렵잖엉..ㅠㅠ]***
-
+<p align="center">
+ 	[DirectX12 너무 어렵잖엉..ㅠㅠ]
+</p>
  <br>
 
 
