@@ -1,5 +1,5 @@
 ---
-title: "[DirectX12] DirectX12 공부노트 - FrameWork를 이옹해보자"
+title: "[DirectX12] DirectX12 공부노트 - FrameWork를 이해해보자"
 excerpt: "DirectX, Graphics"
 
 categories: [DirectX, Graphics]
